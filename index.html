@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/a1140612d3.js" crossorigin="anonymous"></script>
+    <title>Federico Sosa - Portfolio</title>
+    <link rel="stylesheet" href="css/nameNav.css">
+    <link rel="stylesheet" href="css/cajaFlex.css">
+    <link rel="stylesheet" href="css/styleColor.css">
+    <link rel="stylesheet" href="css/reseteado.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleFound.css">
+    
+</head>
+<body>
+    <section class="back">
+        <svg id="svg">
+            <defs>
+                <filter id="disFilter">
+                    <feTurbulence type="turbulence" baseFrequency="0.01" numOctaves="3" seed="1" result="turbulence">
+                        <animate attributeName="baseFrequency" values="0.01;0.005;0.01;" dur="30s" begin="0" repeatCount="indefinite" />
+                    </feTurbulence>
+                    <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="20" xChannelSelector="R" yChannelSelector="B" result="displacement" />
+                </filter>
+            </defs>
+            <g id="background">
+                <image xlink:href="img/fondo.jpg" x="-10" y="-10" height="110%" width="110%" preserveAspectRatio="xMidYMid slice" />
+            </g>
+        </svg>
+    </section>
+    <header class="headerPrincipal">
+        <div class="container">
+            <h1 class="header_logo">
+                <a href="./index.html">
+                    <div class="words">
+                        <span>F</span>
+                        <span>e</span>
+                        <span>d</span>
+                        <span>e</span>
+                        <span>S</span>
+                        
+                    </div>
+                </a>
+            </h1>
+            <nav class="headerPrincipal_nav">
+                <input id="btSobreMi" class="headerPrincipal_nav__link" type="submit" value="Sobre mi" onclick="location.href='#sobreMi_nav'">
+                <input id="btSkills" class="headerPrincipal_nav__link" type="submit" value="Skills" onclick="location.href='#skills_nav'">
+                <input id="btHobbies" class="headerPrincipal_nav__link" type="submit" value="Hobbies" onclick="location.href='#hobbies_nav'">
+                <input id="btFormacion" class="headerPrincipal_nav__link" type="submit" value="Formación" onclick="location.href='#formacion_nav'">
+                <input id="btProyectos" class="headerPrincipal_nav__link" type="submit" value="Proyectos" onclick="location.href='#proyectos_nav'">
+                <input id="btContacto" class="headerPrincipal_nav__link" type="submit" value="Contacto" onclick="location.href='#contacto_nav'">
+            </nav>
+            <h6 class="headerPrincipal_email"><a href="mailto:lfedericososa@hotmail.com">lfedericososa@hotmail.com</a></h6>
+        </div>
+    </header>
+    <main class="contenidoPrincipal">
+        <section class="principal">
+            <div class="container">
+                <div class="contenidoPrincipal_text">
+                    <div class="imgEmpresarial">
+                        <img class="img_personal" src="./img/foto.jpg">
+                    </div>
+                    <ul class="presentacion_lista">
+                        <li class="presentacion">Hola, mi nombre es</li>
+                        <li class="presentacion1">Federico Sosa.</li>
+                        <li class="presentacion2">Estudiante de desarrollo web.</li>
+                        <li class="comentario">Les presento mi portfolio.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!---->
+        <section id="sobreMi_nav" class="sobreMi">
+            <div class="container">
+                <div class="sobreMi_text">
+                    <h2 class="sobreMi_text__title">Sobre mi</h2>
+                    <ul class="sobreMi_text__list">
+                        <li class="sobreMi_text__item styleSobreMi">Mi nombre es <p>Leandro Federico Sosa,</p> Soy de Buenos Aires, Argentina. Tengo 32 años, actualmente estoy formandome como desarrollador de software.</li>
+                        <li class="sobreMi_text__item styleCursiva">Soy apasionado de la programación. Aspiro a integrar un proyecto en el cual pueda poner en práctica mis conocimientos y pueda desarrollarme dentro de un ambiente colaborativo. </li>
+                    </ul>
+                    <p class="sobreMi_text__item">Firma</p>
+                    <button id="cv" class="sobreMi_button">Mi Cv</button>
+                </div>
+            </div>
+        </section>
+        <!---->
+        <section id="skills_nav" class="skills">
+            <div class="container">
+                <div class="skills_text">
+                    <h2 class="skills_text__title">Skills</h2>
+                    <ul class="skills_text__list">
+                        <li>HTML5<i class="sk-texto fa fa-html5 fa-2x"></i></li>
+                        <li>Javascript<i class="sk-texto fa-brands fa-js-square fa-2x"></i></li>
+                        <li>Github<i class="sk-texto fab fa-github-square fa-2x"></i></li>
+                        <li>CSS3<i class="sk-texto fab fa-css3-alt fa-2x"></i></li>
+                        <li>Bootstrap<i class="sk-texto fa-brands fa-bootstrap fa-2x"></i></li>
+                        <li>Trello<i class="sk-texto fa-brands fa-trello fa-2x"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!---->
+        <section id="hobbies_nav" class="hobbies">
+            <div class="container">
+                <div class="hobbies_text">
+                    <h2 class="hobbies_text__title">Hobbies</h2>
+                    <ul class="hobbies_text__list">
+                        <li>Musica<i class="hob-text fa-solid fa-music fa-2x"></i></li>
+                        <li>Cocinar<i class="hob-text fa-solid fa-kitchen-set fa-2x"></i></li>
+                        <li>Cinema<i class="hob-text fa-solid fa-film fa-2x"></i></li>
+                        <li>Programar<i class="hob-text fa-solid fa-laptop-code fa-2x"></i></li>
+                        <li>Gamer<i class="hob-text fa-solid fa-gamepad fa-2x"></i></li>
+                        <li>Caminar<i class="hob-text fa-solid fa-person-walking fa-2x"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!---->
+        <section id="formacion_nav" class="formacion">
+            <div class="container">
+                <div class="formacion_text">
+                    <h2 class="formacion_text__title">Formación Académica</h2>
+                    <div class="formacion_text__list">
+                        <ul>
+                            <li class="formacion_text__item"><img class="alura-logo" src="./img/alura-logo.png"></li>
+                            <li class="formacion_text__item"><img src="./img/oracle-one-logo.png"></li>
+                            <li class="formacion_text__item">2023</li>
+                        </ul>
+                        <div class="formacion_text__list">
+                            <ul>
+                                <li class="formacion_text__item"><a href="https://app.aluracursos.com/user/lfedericososa/program/certificate" target="_blank">Oracle Next Education F2 T3</a></li>
+                                <li class="formacion_text__item"><a href="https://d335luupugsy2.cloudfront.net/cms%2Ffiles%2F10224%2F1671210503Prancheta_3.png?utm_campaign=alura_latam_-_challenge_email_projeto_1_esp&utm_medium=email&utm_source=RD+Station" target="_blank">Insignia ONE Alura Challenge Encriptador de texto</a></li>
+                                <li class="formacion_text__item"><a href="https://d335luupugsy2.cloudfront.net/cms%2Ffiles%2F10224%2F1671211112Prancheta_5.png?utm_campaign=alura_latam_-_challenge_email_projeto_2_esp&utm_medium=email&utm_source=RD+Station" target="_blank">Insignia ONE Alura Challenge Juego del ahorcado</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---->
+        <section id="proyectos_nav" class="proyectos">
+            <div class="container">
+                <div class="proyectos_text">
+                    <h2 class="proyectos_text__title">Proyectos</h2>
+                    <div class="container_proyectos">
+                        <div class="proyectos_text__area img1">
+                            <p class="proyectos_text__item bg">Challenge juego del ahorcado 
+                            </p>
+                            <input id="btRepo" class="proyectos_button" type="submit" value="Ir a proyecto juego del ahorcado"
+                                onclick="location.href='https://leanfed.github.io/AhorcadoGame/';" target="_blank">
+                    
+                                
+                        </div>
+                        <div class="proyectos_text__area img2">
+                            <p class="proyectos_text__item bg">Challenge encriptador de texto
+                            </p>
+                            <input id="btRepo" class="proyectos_button" type="submit" value="Ir a proyecto encriptador de texto"
+                                onclick="location.href='https://leanfed.github.io/Encriptador-/';" target="_blank">
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <!---->
+        <section id="contacto_nav" class="contacto">
+            <div class="container">
+                <h2 class="contacto__titulo">Contacto</h2>
+                <form action="#" class="formulario" id="formulario" method="post">
+                    <div class="input-container">
+                        <input class="contacto__input" type="text" name="nombre" id="nombre" placeholder="Nombre y Apellido" data-tipo="nombre">
+                        <label for="nombre"></label>
+                    </div>
+                    <div class="input-container">
+                        <input class="contacto__input" type="text" name="email" id="email" placeholder="E-mail" data-tipo="email" >
+                        <label for="email"></label>
+                    </div>
+                    <div class="input-container">
+                        <input class="contacto__input" type="text" name="asunto" id="asunto" placeholder="Asunto" data-tipo="asunto" >
+                        <label for="asunto"></label>
+                    </div>
+                    <div class="input-container">
+                        <textarea class="contacto__textarea" rows="5" cols="26" id="mensaje" name="mensaje" placeholder="Su mensaje" data-tipo="mensaje"></textarea>
+                        <label for="mensaje"></label>
+                    </div>
+                    <input type="submit" class="contacto__boton" name="enviar" id="btn-enviar" disabled="true">
+                </form>
+            </div>
+            </div>
+        </section>
+        <!---->
+        <section class="social">
+            <div class="redesSociales icon">
+                <a href="https://github.com/leanfed" target="_blank"><i class="contP1 fa fa-github-square github fa-4x"></i></a>
+                <a href="https://instagram.com/el_pliplito?igshid=MDM4ZDc5MmU=" target="_blank"><i class="contP2 fa fa-instagram fa-4x"></i></a>
+                <a href="https://www.linkedin.com/in/federico-sosa-desarrollo//" target="_blank"><i class="contP3 fa fa-linkedin-square fa-4x"></i></a>
+            </div>
+        </section>
+
+
+    </main>
+    <footer class="piePagina">
+
+        <section class="piePagina_pincipal">
+            <div class="container">
+                <h3>Desarrollado por Leandro Federico Sosa &copy 2023</h3>
+            </div>
+        </section>
+    </footer>
+<script src="js/botones.js"></script>
+<script src="js/validar.js"></script>
+</body>
+
+
+</html>
