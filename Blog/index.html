@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>ede IT</title>
+    <!-- Fede icon -->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+    />
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+    />
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+   
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="css/mdb.min.css.map"> lo comento yo-->
+     <!-- CSS -->
+     <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+
+      <!-- Navbar-->
+      
+      <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar-toggler">
+            <a class="navbar-brand" href="#">
+              <img src="img/icono.png" width="80" alt="Logo de la página web">
+            </a>
+            <ul class="navbar-nav d-flex justify-content-center align-items-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="post.html";>SOBRE MI</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Artículos" id="link-art" onclick="mostrarArt()">ARTICULOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/Portfolio/index.html">PORTFOLIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="mailto:lfedericososa@gmail.com" target="_blank" rel="noopener noreferrer">CONTACTO</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+      <!-- Navbar -->
+
+      <!-- Background image -->
+      <div
+        class="p-5 text-center bg-image"
+        style="background-image: url('img/cover.jpeg');
+          height: 400px;
+          margin-top: 0px;
+        "
+      >
+        <div class="mask" style="background-color: rgba(0, 0, 0, 0.6)">
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="text-white">
+              <h1 class="mb-3"><img src="img/favicon.ico" alt="icon">ede IT</h1>
+              <h4 class="mb-3">
+                En un óceano digital el flujo de conocimiento es infinito
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Background image -->
+    </header>
+    <main class="my-4">
+      <!-- Posts -->
+      <div class="container" id="Articulos">
+        <section id="posts" class="text-center mb-4">
+          <div class="row">
+            <div class="col-md-6 mb-4" id="bd">
+              <div
+                class="bg-image hover-overlay ripple shadow-1-strong rounded mb-4"
+                data-ripple-color="light"
+              >
+                <img src="img/i1.jpg" class="w-100 tamaño" />
+                <a href="#!">
+                  <div
+                    class="mask"
+                    style="background-color: rgba(251, 251, 251, 0.2)"
+                  ></div>
+                </a>
+              </div>
+              <h5 id="Artículos">ADMINISTRACIÓN DE BASES DE DATOS</h5>
+              <p>
+                La administración de bases de datos es crucial en el ámbito de la Tecnología de la Información (TI). Su correcta gestión asegura la eficiencia, seguridad y disponibilidad de la información empresarial.
+              </p>
+              <button type="button" class="btn btn-info btn-rounded" id="btn-bd">
+                Leer más
+              </button>
+            </div>
+            <div class="col-md-6 mb-4" id="tp">
+              <div
+                class="bg-image hover-overlay ripple shadow-1-strong rounded mb-4"
+                data-ripple-color="light"
+              >
+                <img src="img/i2.jpg" class="w-100 tamaño" style="border: black solid;"/>
+                <a href="#!">
+                  <div
+                    class="mask"
+                    style="background-color: rgba(251, 251, 251, 0.2)"
+                  ></div>
+                </a>
+              </div>
+              <h5>TÉCNICAS DE PROGRAMACIÓN</h5>
+              <p>
+                Las técnicas de programación son fundamentales en la Tecnología de la Información (TI). Su correcta aplicación permite desarrollar soluciones eficientes y escalables para los desafíos tecnológicos actuales.
+              </p>
+              <button type="button" class="btn btn-info btn-rounded" id="btn-tp">
+                Leer más
+              </button>
+            </div>
+            <div class="col-md-6 mb-4" style="display: none;" id="lg">
+              <div
+                class="bg-image hover-overlay ripple shadow-1-strong rounded mb-4"
+                data-ripple-color="light"
+              >
+                <img src="img/i3.jpg" class="w-100 tamaño" />
+                <a href="#!">
+                  <div
+                    class="mask"
+                    style="background-color: rgba(251, 251, 251, 0.2)"
+                  ></div>
+                </a>
+              </div>
+              <h5>LÓGICA COMPUTACIONAL</h5>
+              <p>
+                La lógica computacional es esencial en el ámbito de la Tecnología de la Información (TI). Su aplicación permite desarrollar algoritmos eficientes y tomar decisiones lógicas para resolver problemas complejos.
+              </p>
+              <button type="button" class="btn btn-info btn-rounded" id="btn-lc">
+                Leer más
+              </button>
+            </div>
+            <div class="col-md-6 mb-4" style="display: none;" id="am">
+              <div
+                class="bg-image hover-overlay ripple shadow-1-strong rounded mb-4"
+                data-ripple-color="light"
+              >
+                <img src="img/i4.jpg" class="w-100 tamaño" />
+                <a href="#!">
+                  <div
+                    class="mask"
+                    style="background-color: rgba(251, 251, 251, 0.2)"
+                  ></div>
+                </a>
+              </div>
+              <h5>DESARROLLO DE DISPOSITIVOS MÓVILES</h5>
+              <p>
+                El desarrollo de dispositivos móviles es crucial en el campo de la Tecnología de la Información (TI). Su relevancia radica en la creciente dependencia de las personas en estos dispositivos para acceder a información y realizar tareas diarias.
+              </p>
+              <button type="button" class="btn btn-info btn-rounded" id="btn-dm">
+                Leer más
+              </button>
+            </div>
+            <div class="col-md-6 mb-4" style="display: none;" id="mp">
+              <div
+                class="bg-image hover-overlay ripple shadow-1-strong rounded mb-4"
+                data-ripple-color="light"
+              >
+                <img src="img/i5.jpg" class="w-100 tamaño" />
+                <a href="#!">
+                  <div
+                    class="mask"
+                    style="background-color: rgba(251, 251, 251, 0.2)"
+                  ></div>
+                </a>
+              </div>
+              <h5>METODOLOGÍA DE PRUEBA DE SISTEMAS</h5>
+              <p>
+                La metodología de prueba de sistemas garantiza la calidad y confiabilidad de los sistemas, asegurando su correcto funcionamiento y satisfacción de los usuarios.
+              </p>
+              <button type="button" class="btn btn-info btn-rounded" id="btn-mp">
+                Leer más
+              </button>
+            </div>
+            <div class="col-md-6 mb-4" style="display: none;" id="poo">
+              <div
+                class="bg-image hover-overlay ripple shadow-1-strong rounded mb-4"
+                data-ripple-color="light"
+              >
+                <img src="img/i6.jpg" class="w-100 tamaño" />
+                <a href="#!">
+                  <div
+                    class="mask"
+                    style="background-color: rgba(251, 251, 251, 0.2)"
+                  ></div>
+                </a>
+              </div>
+              <h5>DESARROLLO DE SISTEMAS ORIENTADOS A OBJETOS</h5>
+              <p>
+                El desarrollo de sistemas orientados a objetos es crucial en el desarrollo de software. Permite una estructura modular, reutilización de código y mayor flexibilidad en el proceso de desarrollo.
+              </p>
+              <button type="button" class="btn btn-info btn-rounded" id="btn-poo">
+                Leer más
+              </button>
+            </div>
+          </div>
+        </section>
+        <!-- Posts -->
+      </div>
+       <!-- Contenido de articulos -->
+      <section class="mb-3">
+        <div class="container justify-content-center seccion-texto" style="display: none;" id="articulo-bd">
+
+          <h1 style="text-align: center;">Administración de Base de datos</h1>
+          <div>
+            <img src="img/base_datos1.png" alt="base de datos" class="tamaño2">
+          </div>
+
+          <p>
+            La administración de bases de datos es una disciplina que se encarga de organizar, 
+            gestionar y mantener de forma eficiente las bases de datos en un sistema informático.
+            Implica el diseño, implementación,
+            mantenimiento y optimización de bases de datos para garantizar la integridad,
+            seguridad y disponibilidad de los datos. Esto incluye tareas como la creación de tablas,
+            la definición de relaciones entre los datos, la gestión de usuarios y permisos,
+            la optimización de consultas y la realización de copias de seguridad. 
+          </p>
+          <p>
+            La administración de bases de datos surge
+            en la década de 1960 con el desarrollo de los primeros
+            sistemas de gestión de bases de datos (SGBD). 
+            A medida que las aplicaciones informáticas se volvieron más
+            complejas y la cantidad de datos creció exponencialmente,
+            se hizo necesario contar con profesionales especializados en la gestión de bases de datos. 
+          </p>
+
+          <h2 style="text-align: center;">¿Qué es una base de datos?</h2>
+
+          <div>
+            <img src="img/base_datos2.png" alt="base de datos" class="tamaño2">
+          </div>
+
+          <p>
+
+          <p>Una base de datos es un conjunto organizado de información estructurada y almacenada de 
+            manera sistemática para facilitar su gestión, acceso y consulta. Se utiliza para almacenar 
+            datos de manera eficiente y permitir la manipulación y recuperación de información de manera 
+            rápida y precisa. Las bases de datos se utilizan en una amplia variedad de aplicaciones, 
+            como sistemas de gestión empresarial, sitios web, aplicaciones móviles y más.</p>
+
+            <h2 style="text-align:center;">¿Cuáles son las características de las bases de datos?</h2>
+            <div>
+              <img src="img/sql-nosql.png" alt="base de datos" class="tamaño2">
+            </div>
+            <ul>
+              <li>Capacidad de almacenar grandes volúmenes de datos de manera estructurada</li><br>
+              <li>Capacidad de realizar consultas y análisis complejos</li><br>
+              <li>Seguridad y protección de los datos</li><br>
+              <li>Capacidad de respaldo y recuperación en caso de fallos</li><br>
+              <li>Posibilidad de compartir los datos entre diferentes aplicaciones y usuarios</li>
+            </ul>
+           
+
+          <h2 style="text-align: center;">¿Cuál es la importancia de las bases de datos en la a actualidad?</h2>
+          <p>Las bases de datos son fundamentales en la actualidad debido al enorme volumen
+           de información que se genera y se almacena en todo tipo de organizaciones y sistemas informáticos.
+           Algunas de las principales razones por las que las bases de datos son importantes son las siguientes: </p>
+           <div>
+            <img src="img/actualidadb.png" alt="base de datos" class="tamaño2">
+          </div>
+           <ul>
+            <li>Almacenamiento y organización de datos: Las bases de datos permiten almacenar grandes volúmenes de datos
+               de manera estructurada y organizada, lo que facilita su gestión y acceso. </li>
+            <li>Acceso rápido a la información: Las bases de datos permiten realizar consultas y búsquedas complejas en 
+              grandes conjuntos de datos, lo que permite acceder rápidamente a la información relevante.</li>
+            <li>Compartir datos entre diferentes aplicaciones y usuarios: Las bases de datos permiten compartir datos entre
+               diferentes aplicaciones y usuarios, lo que facilita la integración de sistemas y la colaboración entre equipos. </li>
+            <li>Mejora de la toma de decisiones: Las bases de datos proporcionan información precisa y actualizada que puede utilizarse 
+              para tomar decisiones informadas en diferentes ámbitos, como los negocios, la investigación científica o la gestión de recursos. </li>
+           </ul>
+
+          <h2 style="text-align: center;">Sistemas de administración de bases de datos actuales</h2>
+          <div>
+            <img src="img/sgbd.png" alt="base de datos" class="tamaño2">
+          </div>
+          <p>Algunos ejemplos de sistemas de administración de bases de datos
+            ampliamente utilizados son Oracle, MySQL, Microsoft SQL Server y PostgreSQL.
+            Estos sistemas permiten gestionar grandes volúmenes de datos en diferentes entornos,
+            como empresas, instituciones educativas, organizaciones gubernamentales y sitios web. </p>
+        </div>
+
+        <div class="container justify-content-center seccion-texto" style="display: none;" id="articulo-tp">
+          <h1 style="text-align: center;">Técnicas de programación</h1>
+          <div>
+            <img src="img/tp-i.png" alt="base de datos" class="tamaño2">
+          </div>
+          <p>Las <b>técnicas de programación</b> son métodos y enfoques utilizados para desarrollar
+             software de manera eficiente y efectiva. Estas técnicas incluyen la <b>planificación</b>,
+             el <b>diseño</b>, la <b>codificación</b>, la <b>depuración</b> y la <b>optimización del código</b>.
+             El objetivo principal de estas técnicas es producir
+             software de alta calidad que cumpla con los requisitos del usuario y sea fácil de mantener y mejorar en el futuro.</p>
+          
+             <h2 style="text-align: center;">Orígenes de las técnicas de programación</h2>
+             <div>
+              <img src="img/tp-ii.png" alt="base de datos" class="tamaño2">
+            </div>
+             <p>Las técnicas de programación tienen sus orígenes en los primeros días de la informática y la programación de computadoras. A medida que la tecnología avanzaba, se hizo necesario establecer métodos y enfoques estructurados para desarrollar software de manera más eficiente. 
+ 
+            Uno de los primeros enfoques fue la <b>programación estructurada</b>, que se desarrolló en la década de <b>1960</b>. Este enfoque se basaba en la idea de dividir un programa en módulos más pequeños y más manejables, lo que facilitaba la comprensión y el mantenimiento del código. 
+             
+            </p><p>En la década de <b>1970</b>, se introdujo la <b>programación orientada a objetos (POO)</b>. Este enfoque se basaba en la idea de modelar el software como una colección de objetos interconectados que interactúan entre sí. La <b>POO</b> permitía una mayor <b>reutilización de código</b> y facilitaba el desarrollo de software más <b>modular</b> y <b>escalable</b>. 
+             
+            Con el tiempo, se han desarrollado y refinado muchas otras técnicas de programación, como el <b>desarrollo ágil</b>, la <b>programación en capas</b>, el <b>desarrollo basado en componentes</b>, entre otros. Estas técnicas se han adaptado a medida que la tecnología ha evolucionado y las necesidades de desarrollo de software han cambiado.</p>
+             
+            <p>En resumen, las técnicas de programación han evolucionado a lo largo del tiempo para abordar los desafíos y requisitos cambiantes en el desarrollo de software, y continúan siendo una parte fundamental de la ingeniería de software moderna.</p>
+          
+            <h2 style="text-align: center;">¿Cuáles son las características de las técnicas de programación?</h2>
+            <div>
+              <img src="img/tp-iii.png" alt="base de datos" class="tamaño2">
+            </div>
+            <p>Las características de las técnicas de programación pueden variar dependiendo del enfoque y la metodología utilizada. Sin embargo, algunas características comunes de las técnicas de programación incluyen: </p>
+          <ul>
+            <li><b>Estructura</b>: Las técnicas de programación suelen enfocarse en la estructura y organización del código. Esto implica dividir el programa en módulos o funciones más pequeñas y manejables, lo que facilita la comprensión y el mantenimiento del código. </li>
+            <li><b>Reutilización de código</b> : Las técnicas de programación fomentan la reutilización de código, lo que significa aprovechar el código existente en lugar de escribirlo desde cero. Esto se logra mediante la creación de bibliotecas, módulos o componentes que se pueden utilizar en diferentes partes del software. </li>
+            <li><b>Modularidad</b>: Las técnicas de programación promueven la modularidad, es decir, dividir el software en componentes independientes y cohesivos. Esto permite que cada componente se desarrolle y mantenga por separado, lo que facilita la escalabilidad y el mantenimiento del software. </li>
+            <li><b>Abstracción</b>: Las técnicas de programación utilizan la abstracción para simplificar la complejidad del software. Esto implica ocultar los detalles innecesarios y centrarse en la funcionalidad esencial. La abstracción se logra mediante el uso de estructuras de datos, clases, interfaces u otros mecanismos similares. </li>
+            <li><b>Documentación y comentarios</b>: Las técnicas de programación enfatizan la importancia de la documentación y los comentarios en el código. Esto facilita la comprensión del código por parte de otros desarrolladores y ayuda en el mantenimiento y la depuración del software. </li>
+            <li><b>Pruebas y depuración</b>: Las técnicas de programación incluyen métodos para realizar pruebas y depuración del código. Esto implica probar el software en diferentes escenarios y corregir errores o fallos para garantizar su correcto funcionamiento. </li>
+          </ul>
+          <h2 style="text-align: center;">¿Qué tipos de técnicas de programación existen?</h2>
+          <div>
+            <img src="img/tp-iv.png" alt="base de datos" class="tamaño2">
+          </div>
+          <p>Cada tipo de técnica tiene sus propias características y beneficios, y su elección depende del contexto y los requisitos específicos del proyecto de desarrollo de software. <br> Las técnicas de programación más comunes son: </p>
+          <ul>
+          <li><b>Programación estructurada</b>: Esta técnica se basa en dividir el programa en módulos más pequeños y manejables, utilizando estructuras de control como bucles y condicionales para controlar el flujo de ejecución del programa. </li>
+          <li><b>Programación orientada a objetos (POO)</b>: La POO se basa en la creación de objetos que contienen datos y funciones relacionadas, lo que permite una mayor reutilización de código y una mejor organización del software. </li>
+          <li><b>Programación funcional:</b>Esta técnica se basa en el uso de funciones puras, donde las funciones no tienen efectos secundarios y se enfocan en la transformación de datos. </li>
+          <li><b>Desarrollo ágil</b>: El desarrollo ágil es una metodología que se centra en la colaboración y la adaptabilidad, utilizando ciclos cortos de desarrollo y retroalimentación continua para entregar software de manera rápida y eficiente. </li>
+          <li><b>Desarrollo dirigido por pruebas (TDD)</b>: Esta técnica implica escribir pruebas automatizadas antes de escribir el código fuente, lo que ayuda a garantizar que el software cumpla con los requisitos y funcione correctamente. </li>
+          <li><b>Programación en capas</b>: Esta técnica se basa en dividir el software en capas lógicas, donde cada capa se encarga de una funcionalidad específica. Esto facilita la modularidad y el mantenimiento del software. </li>
+          <li><b>Desarrollo basado en componentes</b>: Esta técnica se basa en la reutilización de componentes de software preexistentes, que se combinan para construir aplicaciones más grandes. </li>
+          </ul>
+          <h2 style="text-align: center;">¿Cuál la importancia de las técnicas de programación en el desarrollo de software?</h2>
+          <div>
+            <img src="img/tp-v.png" alt="base de datos" class="tamaño2">
+          </div>
+          <p>Las técnicas de programación son fundamentales en el desarrollo de software por varias razones: </p>
+          <ul>
+            <li><b>Eficiencia y productividad</b>: Las técnicas de programación permiten a los desarrolladores escribir código de manera más eficiente y productiva. Al utilizar métodos y enfoques estructurados, se optimiza el proceso de desarrollo, lo que reduce el tiempo y los recursos necesarios para completar un proyecto. </li>
+            <li><b>Mantenibilidad y escalabilidad</b>: Las técnicas de programación promueven la modularidad y la reutilización de código, lo que facilita el mantenimiento y la escalabilidad del software. Al dividir el código en módulos o componentes, los cambios y actualizaciones pueden realizarse de manera más controlada sin afectar todo el sistema. </li>
+            <li><b>Calidad del software</b>: Las técnicas de programación fomentan la escritura de código limpio, estructurado y bien documentado. Esto ayuda a reducir errores y fallos en el software, mejorando su calidad y confiabilidad. </li>
+            <li><b>Colaboración y trabajo en equipo</b>: Las técnicas de programación establecen estándares y prácticas comunes que facilitan la colaboración entre los miembros del equipo de desarrollo. Esto permite una mejor comunicación, comprensión y mantenimiento del código en proyectos colaborativos. </li>
+            <li><b>Adaptabilidad y flexibilidad</b>: Las técnicas de programación permiten adaptarse a los cambios y requisitos del software de manera más ágil. Al utilizar enfoques como el desarrollo ágil o la programación orientada a objetos, los desarrolladores pueden realizar cambios y ajustes más fácilmente sin afectar todo el sistema. </li>
+          </ul>
+          <p>Las técnicas de programación son esenciales para el desarrollo de software eficiente, mantenible y de alta calidad. Ayudan a los desarrolladores a optimizar su trabajo, mejorar la colaboración y garantizar que el software cumpla con los requisitos del usuario.</p>
+        </div>
+
+        <div class="container justify-content-center seccion-texto" style="display: none;" id="articulo-lc">
+          <h1 style="text-align: center;">Lógica computacional</h1>
+          <div>
+            <img src="img/lc-i.png" alt="base de datos" class="tamaño2">
+          </div>
+          <p>La lógica computacional es una rama de la lógica y la informática que se enfoca en el estudio y la aplicación de principios lógicos en la computación. Se basa en el uso de reglas y símbolos para representar y manipular información en sistemas computacionales. 
+ 
+              La lógica computacional se utiliza para diseñar y desarrollar algoritmos, sistemas de programación y lenguajes de programación. Ayuda a los programadores a razonar sobre la corrección y eficiencia de los programas, así como a resolver problemas complejos utilizando la lógica formal. 
+ 
+              Esta disciplina se divide en varios subcampos, como la lógica de predicados, la lógica proposicional, la lógica modal y la lógica difusa, entre otros. Cada uno de estos subcampos tiene su propio conjunto de reglas y aplicaciones específicas en el ámbito de la informática y la inteligencia artificial. 
+ 
+              En resumen, la lógica computacional es el estudio y la aplicación de principios lógicos en la computación, lo que ayuda a los programadores a desarrollar algoritmos y sistemas de programación más eficientes y correctos.</p>
+          <h2 style="text-align: center;">Orígenes de la lógica computacional</h2>
+          <div>
+            <img src="img/lc-ii.png" alt="base de datos" class="tamaño2">
+          </div>
+          <p>Los orígenes de la lógica computacional se remontan a los fundamentos de la lógica formal y la matemática. Los primeros desarrollos en este campo se dieron en el siglo XIX con los trabajos de matemáticos como George Boole y Augustus De Morgan, quienes desarrollaron la lógica simbólica y las leyes del álgebra booleana. 
+ 
+              Sin embargo, la lógica computacional como disciplina específica comenzó a tomar forma en el siglo XX con el advenimiento de la computación y la creación de las primeras computadoras. Durante este período, se realizaron avances significativos en el campo de la lógica matemática y la teoría de la computación. 
+               
+              Uno de los hitos más importantes fue el trabajo de Alan Turing en la década de 1930, quien propuso el concepto de una "máquina universal" que podía realizar cualquier cálculo computacional. Esta idea sentó las bases de la teoría de la computación y la lógica computacional moderna. 
+               
+              A medida que la tecnología de la computación avanzaba, la lógica computacional se convirtió en una disciplina esencial para el diseño y la programación de sistemas computacionales. Se desarrollaron lenguajes de programación formales, como el lenguaje de programación LISP, que se basaban en principios lógicos y permitían la manipulación simbólica. 
+               
+              En resumen, los orígenes de la lógica computacional se encuentran en los fundamentos de la lógica formal y la matemática, pero se consolidaron como una disciplina específica con el advenimiento de la computación en el siglo XX. Desde entonces, ha sido fundamental en el diseño y desarrollo de sistemas computacionales.</p>
+          <h2 style="text-align: center;">¿Cuáles son las características de la lógica computacional?</h2>
+          <div>
+            <img src="img/lc-iii.png" alt="base de datos" class="tamaño2">
+          </div>
+          <p>
+            Las características de la lógica computacional son:
+          </p>
+          <ul>
+            <li><b>Formalización</b>: La lógica computacional se basa en la formalización de reglas y principios lógicos utilizando símbolos y notaciones precisas. Esto permite la representación y manipulación sistemática de información y razonamiento lógico. </li>
+            <li><b>Sintaxis y semántica</b>: La lógica computacional define una sintaxis precisa para la construcción de fórmulas lógicas y una semántica que establece el significado de esas fórmulas. Esto permite la interpretación y evaluación precisa de las expresiones lógicas. </li>
+            <li><b>Deducción y razonamiento</b>: La lógica computacional se utiliza para realizar deducciones y razonamientos lógicos. Permite inferir conclusiones lógicas a partir de premisas o axiomas mediante la aplicación de reglas de inferencia.</li>
+            <li><b>Computabilidad</b>: La lógica computacional se ocupa de la teoría de la computabilidad, que estudia los límites y posibilidades de los problemas que pueden ser resueltos por una computadora. Esto incluye el estudio de la complejidad computacional y la clasificación de problemas según su dificultad.</li>
+            <li><b>Aplicaciones en inteligencia artificial</b>: La lógica computacional es fundamental en el campo de la inteligencia artificial, ya que se utiliza para representar el conocimiento y el razonamiento en sistemas inteligentes. Permite el desarrollo de sistemas expertos, sistemas de razonamiento automatizado y agentes inteligentes. </li>
+          </ul>
+          <h2 style="text-align: center;">¿Qué tipos de operadores lógicos existen?
+          </h2>
+          <div>
+            <img src="img/lc-iv.png" alt="base de datos" class="tamaño2">
+          </div>
+          <p>Existen varios tipos de operadores lógicos que se utilizan en la lógica y en la programación. Los principales operadores lógicos son: </p>
+          <ul>
+            <li><b>Negación (NOT)</b>: Este operador se utiliza para invertir el valor de una expresión lógica. Si la expresión es verdadera, la negación la convierte en falsa, y viceversa. </li>
+            <li><b>Conjunción (AND)</b>: Este operador se utiliza para combinar dos o más expresiones lógicas, y devuelve verdadero solo si todas las expresiones son verdaderas. Si alguna de las expresiones es falsa, el resultado será falso. </li>
+            <li><b>Disyunción (OR)</b>: Este operador se utiliza para combinar dos o más expresiones lógicas, y devuelve verdadero si al menos una de las expresiones es verdadera. Solo si todas las expresiones son falsas, el resultado será falso. </li>
+            <li><b>Disyunción exclusiva (XOR)</b>: Este operador se utiliza para combinar dos expresiones lógicas, y devuelve verdadero si exactamente una de las expresiones es verdadera. Si ambas expresiones son verdaderas o falsas, el resultado será falso. </li>
+          </ul>
+          <p>También existen otros operadores lógicos más avanzados, como el condicional (IF-THEN) y el bicondicional (IF AND ONLY IF), que se utilizan en contextos más específicos. </p>
+          <h2 style="text-align: center;">¿Qué estructuras lógicas existen?
+          </h2>
+          <div>
+            <img src="img/lc-v.png" alt="base de datos" class="tamaño2">
+          </div>
+          <p>La elección y combinación de estas estructuras depende del problema a resolver
+             y del lenguaje de programación utilizado. Las estructuras lógicas más comunes utilizadas en la programación son:</p>
+           <ul>
+            <li><b>Sentencias condicionales</b>: Estas estructuras permiten ejecutar diferentes bloques de código según una condición. La estructura más común es el "if-else" (si-sino), que ejecuta un bloque de código si se cumple una condición y otro bloque si no se cumple. </li>
+            <li><b>Bucles</b>: Las estructuras de bucles permiten repetir un bloque de código varias veces. Los bucles más comunes son el "while" (mientras) y el "for", que ejecutan el bloque de código mientras se cumpla una condición o un número determinado de veces, respectivamente.</li>
+            <li><b>Funciones y procedimientos</b> : Estas estructuras permiten agrupar un conjunto de instrucciones en un bloque que se puede llamar y ejecutar en diferentes partes del programa. Las funciones pueden tener un valor de retorno, mientras que los procedimientos no lo tienen. </li>
+            <li><b>Estructuras de datos</b>: Estas estructuras permiten organizar y almacenar datos de manera eficiente. Algunas estructuras de datos comunes son los arreglos (arrays), listas enlazadas (linked lists), pilas (stacks) y colas (queues). </li>
+            <li><b>Estructuras de control de flujo</b>: Estas estructuras permiten controlar el flujo de ejecución del programa. Algunas estructuras de control de flujo comunes son las instrucciones "break" (romper) y "continue" (continuar), que alteran el comportamiento de los bucles, y las instrucciones "switch" (selección múltiple) que permiten seleccionar diferentes caminos de ejecución según el valor de una variable. </li>
+           </ul>
+             <h2 style="text-align: center;">¿Cuál es su importancia en el desarrollo de software?</h2>
+             <div>
+              <img src="img/lc-vi.png" alt="base de datos" class="tamaño2">
+            </div>
+             <p>La lógica computacional es de gran importancia en el desarrollo de software por varias razones: </p>
+          <ul>
+            <li><b>Razonamiento lógico</b>: La lógica computacional permite a los desarrolladores aplicar principios de razonamiento lógico en el diseño y desarrollo de software. Esto ayuda a garantizar que el software funcione correctamente y cumpla con los requisitos establecidos. </li>
+            <li><b>Diseño de algoritmos</b>: La lógica computacional es fundamental para el diseño de algoritmos eficientes y precisos. Los algoritmos son la base de cualquier software y la lógica computacional ayuda a definir la secuencia lógica de pasos para resolver un problema específico.</li>
+            <li><b>Solución de problemas</b> : La lógica computacional proporciona herramientas y técnicas para abordar problemas complejos en el desarrollo de software. Permite descomponer un problema en partes más pequeñas y resolverlos de manera lógica y estructurada. </li>
+            <li><b>Optimización de recursos</b>: La lógica computacional permite optimizar el uso de recursos en el desarrollo de software. Al aplicar principios lógicos, los desarrolladores pueden identificar y eliminar redundancias, mejorar la eficiencia y minimizar errores. </li>
+            <li><b>Verificación y validación</b>: La lógica computacional es esencial para verificar y validar el software. Permite realizar pruebas y análisis lógicos para asegurarse de que el software funcione correctamente y cumpla con los estándares de calidad.</li>
+          </ul>
+          <p>La lógica computacional es crucial en el desarrollo de software, ya que proporciona un enfoque lógico y estructurado para resolver problemas, diseñar algoritmos eficientes y garantizar la calidad del software. Ayuda a los desarrolladores a tomar decisiones informadas y a crear software confiable y funcional.</p>
+        </div>
+
+        <div class="container justify-content-center seccion-texto" style="display: none;" id="articulo-dm">
+          <h1 style="text-align: center;">Desarrollo de Dispositivos Móviles</h1>
+          <div>
+            <img src="img/principalmovil.png" alt="base de datos" class="tamaño2">
+          </div>
+          <p>El Desarrollo de Aplicaciones para Dispositivos Móviles se refiere al proceso de crear software específicamente diseñado para ser utilizado en dispositivos móviles, como teléfonos inteligentes y tabletas. Estas aplicaciones están diseñadas para aprovechar las características y funcionalidades únicas de estos dispositivos. </p>
+          <h2 style="text-align: center;">Orígenes del Desarrollo de Aplicaciones para Dispositivos Móviles
+          </h2>
+          <div>
+            <img src="img/dm-i.png" alt="base de datos" class="tamaño2">
+          </div>
+          <p>Los orígenes del Desarrollo de Aplicaciones para Dispositivos Móviles se remontan al surgimiento de los primeros teléfonos móviles con capacidades más allá de las llamadas y los mensajes de texto. Con el avance de la tecnología y el crecimiento de la popularidad de los dispositivos móviles, se creó la necesidad de desarrollar aplicaciones específicas para satisfacer las demandas de los usuarios. </p>
+          <h2 style="text-align: center;">¿Cuáles son las características del Desarrollo de Aplicaciones para Dispositivos Móviles?
+          </h2><p>Las características del Desarrollo de Aplicaciones para Dispositivos Móviles incluyen: </p>
+          <ul>
+          <li><b>Interfaz de usuario adaptada</b> : Las aplicaciones móviles están diseñadas para adaptarse a las pantallas más pequeñas de los dispositivos móviles y ofrecer una experiencia de usuario intuitiva y fácil de usar. </li>
+          <li><b>Acceso a características del dispositivo</b> : Las aplicaciones móviles pueden aprovechar características como la ubicación GPS, la cámara, los sensores de movimiento y otras funcionalidades específicas de los dispositivos móvile</li>
+          <li><b>Conectividad</b> : Las aplicaciones móviles pueden aprovechar la conectividad a Internet y permitir la interacción en tiempo real con servicios en línea y otras aplicaciones. </li>
+          <li><b>Portabilidad</b> : Las aplicaciones móviles se pueden instalar y ejecutar en diferentes plataformas, como Android e iOS, lo que permite llegar a un amplio público de usuarios. </li>
+        </ul>
+          <h2 style="text-align: center;">
+            ¿Qué lenguajes de programación se utilizan en el Desarrollo de Aplicaciones para Dispositivos Móviles?
+            </h2>
+            <div>
+              <img src="img/dm-ii.png" alt="base de datos" class="tamaño2">
+            </div>
+            <p>Los lenguajes de programación comúnmente utilizados en el Desarrollo de Aplicaciones para Dispositivos Móviles incluyen Java y Kotlin para Android, y Swift y Objective-C para iOS. Además, se utilizan tecnologías web como HTML, CSS y JavaScript para el desarrollo de aplicaciones multiplataforma. </p>
+          <h2 style="text-align: center;">¿Cuál es su importancia en la industria del desarrollo de software?</h2>
+          <div>
+            <img src="img/dm-iii.png" alt="base de datos" class="tamaño2">
+          </div>
+          <p>La importancia del Desarrollo de Aplicaciones para Dispositivos Móviles en la industria del desarrollo de software radica en la creciente demanda de aplicaciones móviles por parte de los usuarios. Los dispositivos móviles se han convertido en una parte integral de la vida cotidiana, y las aplicaciones móviles brindan funcionalidades y servicios que mejoran la productividad, el entretenimiento y la comunicación. El desarrollo de aplicaciones móviles ofrece oportunidades de negocio y permite a las empresas llegar a una base de usuarios más amplia y diversa.</p>
+        </div>
+
+        <div class="container justify-content-center seccion-texto" style="display: none;" id="articulo-mp">
+          <h1 style="text-align: center;">Metodología de Prueba de Sistemas</h1>
+          <div>
+            <img src="img/mp-i.png" alt="base de datos" class="tamaño2">
+          </div>
+         <p>La Metodología de Pruebas de Sistemas es un enfoque estructurado y sistemático utilizado para planificar, diseñar, ejecutar y evaluar pruebas en sistemas de software. Su objetivo principal es garantizar la calidad y confiabilidad del sistema, identificando posibles errores y asegurando que cumpla con los requisitos establecidos. </p>
+          <h2 style="text-align: center;">Orígenes de la Metodología de Pruebas de Sistemas
+          </h2>
+          <div>
+            <img src="img/mp-ii.png" alt="base de datos" class="tamaño2">
+          </div><p>La historia del testing, o pruebas de software, se remonta a los primeros días de la informática. A medida que los sistemas informáticos se volvieron más complejos, se hizo necesario desarrollar métodos para verificar su funcionamiento y asegurarse de que cumplieran con los requisitos y expectativas de los usuarios.</p> 
+          <p>En las etapas iniciales, el testing se basaba en métodos informales, como la revisión manual del código y la ejecución de pruebas ad hoc. Con el tiempo, a medida que los sistemas se volvieron más grandes y complejos, se hizo evidente la necesidad de un enfoque más estructurado y sistemático.</p> 
+          <p>En la década de 1970, se comenzaron a desarrollar técnicas y metodologías más formales para el testing de software. Se introdujeron conceptos como la partición de equivalencia, que divide el conjunto de datos de entrada en grupos que se espera que produzcan resultados similares, y la prueba de casos límite, que se centra en los valores extremos de entrada.</p> 
+          <p>En la década de 1980, se produjo un avance significativo con la introducción de herramientas automatizadas de testing. Estas herramientas permitieron la ejecución de pruebas de manera más eficiente y efectiva, reduciendo el tiempo y los recursos necesarios para probar un sistema.</p> 
+          <p>En las últimas décadas, el testing ha seguido evolucionando con el advenimiento de nuevas metodologías y enfoques, como el testing ágil y el testing continuo. Estos enfoques se centran en la colaboración, la iteración y la entrega continua de software de alta calidad.</p> 
+          <p>En resumen, la historia del testing ha sido un proceso de mejora y refinamiento a lo largo de los años, con el objetivo de garantizar la calidad y confiabilidad de los sistemas informáticos.</p>
+          <h2 style="text-align: center;">¿Cuáles son las características de la Metodología de Pruebas de Sistemas?
+          </h2>
+          <div>
+            <img src="img/mp-iii.png" alt="base de datos" class="tamaño2">
+          </div><p>Las características de la Metodología de Pruebas de Sistemas incluyen: </p>
+          <ul>
+            <li><b>Planificación</b> : Se realiza una planificación detallada de las pruebas, que incluye la identificación de los objetivos, los recursos necesarios, el alcance y el cronograma de las pruebas.</li>
+            <li><b>Diseño de casos de prueba</b> : Se definen los casos de prueba que se utilizarán para evaluar el sistema. Esto implica identificar los escenarios de prueba, las entradas y salidas esperadas, y los datos de prueba necesarios. </li>
+            <li><b>Ejecución de pruebas</b> : Se lleva a cabo la ejecución de los casos de prueba según el plan definido. Esto puede incluir pruebas funcionales, pruebas de rendimiento, pruebas de seguridad, entre otras. </li>
+            <li><b>Registro y seguimiento de defectos</b> : Se registran y se realiza un seguimiento de los defectos o errores encontrados durante las pruebas. Esto permite su corrección y seguimiento hasta su resolución. </li>
+            <li><b>Evaluación y mejora</b> : Se evalúa el rendimiento del sistema durante las pruebas y se realizan mejoras en el proceso de prueba para futuros proyectos. </li>
+          </ul>
+          <h2 style="text-align: center;">¿Qué tipos de Metodología de Pruebas de Sistemas
+            existen?
+            </h2>
+            <div>
+              <img src="img/mp-iv.png" alt="base de datos" class="tamaño2">
+            </div>
+            <p>Existen diferentes tipos de Metodologías de Pruebas de Sistemas, como: </p>
+            <ul>
+              <li><b>Metodología de Pruebas Funcionales</b>: Se centra en evaluar si el sistema cumple con los requisitos funcionales establecidos. </li>
+              <li><b>Metodología de Pruebas de Rendimiento</b>: Se enfoca en evaluar el rendimiento del sistema en términos de tiempo de respuesta, capacidad de carga y estabilidad. </li>
+              <li><b>Metodología de Pruebas de Seguridad</b>: Se concentra en evaluar la seguridad del sistema, identificando posibles vulnerabilidades y riesgos. </li>
+            </ul>
+          <h2 style="text-align: center;">¿Cuál es su importancia en el desarrollo de software?
+          </h2>
+          <div>
+            <img src="img/mp-v.png" alt="base de datos" class="tamaño2">
+          </div>
+          <p>
+            La importancia de la Metodología de Pruebas de Sistemas en el desarrollo de software radica en su capacidad para identificar y corregir errores antes de que el sistema sea implementado en producción. Esto ayuda a garantizar la calidad del software, mejora la satisfacción del usuario y reduce los costos asociados con la corrección de errores en etapas posteriores. Además, la Metodología de Pruebas de Sistemas permite mejorar la confiabilidad y el rendimiento del sistema, lo que contribuye a la reputación y éxito de la organización en el mercado.
+          </p>
+        </div>
+
+        <div class="container justify-content-center seccion-texto" style="display:none;" id="articulo-poo">
+          <h1 style="text-align: center;">Desarrollo de Sistemas Orientados a Objetos</h1>
+           <div>
+            <img src="img/poo-i.png" alt="base de datos" class="tamaño2">
+          </div>
+          <p>La Programación Orientada a Objetos (POO) es un paradigma de programación que se basa en la creación y manipulación de objetos. En la POO, los objetos son entidades que encapsulan datos y comportamientos relacionados, y se comunican entre sí a través de mensajes.</p>
+          <h2 style="text-align: center;">Orígenes de la Programación Orientada a Objetos
+          </h2>
+          <div>
+            <img src="img/poo-ii.png" alt="base de datos" class="tamaño2">
+          </div>
+          <p>Bjarne Nygaard es un científico de la computación noruego y uno de los creadores del lenguaje de programación Simula, que sentó las bases para la Programación Orientada a Objetos (POO). Nygaard desarrolló Simula junto con Ole-Johan Dahl en la década de 1960 en el Instituto Noruego de Tecnología. Su trabajo pionero en Simula fue fundamental para el desarrollo y la popularización de la POO.</p>
+          <h2 style="text-align: center;">¿Cuáles son las características de la Programación Orientada a Objetos?
+          </h2>
+          <div>
+            <img src="img/poo-iii.png" alt="base de datos" class="tamaño2">
+          </div>
+          <p>Las características de la Programación Orientada a Objetos incluyen: </p>
+          <ul>
+            <li><b>Abstracción</b>: Permite representar entidades del mundo real como objetos en el software, abstrayendo solo los atributos y comportamientos relevantes.</li>
+            <li><b>Encapsulamiento</b>: Los objetos encapsulan datos y comportamientos relacionados en una unidad cohesiva, lo que permite ocultar la implementación interna y exponer solo una interfaz para interactuar con el objeto. </li>
+            <li><b>Herencia</b>: Permite crear jerarquías de clases, donde las clases hijas heredan características y comportamientos de las clases padre. Esto promueve la reutilización de código y la creación de relaciones entre objetos. </li>
+            <li><b>Polimorfismo</b>: Permite que los objetos de diferentes clases respondan de manera diferente a un mismo mensaje. Esto facilita la flexibilidad y la extensibilidad del software. </li>
+          </ul>
+          <h2 style="text-align: center;">¿Ejemplos de la Programación Orientada a Objetos en el desarrollo de software?
+          </h2>
+          <div>
+            <img src="img/poo-iv.png" alt="base de datos" class="tamaño2">
+          </div>
+          <p>Ejemplos de la Programación Orientada a Objetos en el desarrollo de software incluyen la creación de clases que representan objetos como usuarios, productos, vehículos, entre otros. Cada clase tiene atributos y métodos que definen su comportamiento y permite la interacción entre objetos. </p>
+          <h2 style="text-align: center;">¿Qué lenguajes orientados a la Programación Orientada a Objetos existen?</h2>
+           <div>
+            <img src="img/poo-v.png" alt="base de datos" class="tamaño2">
+          </div>
+           <p>Existen varios lenguajes orientados a la Programación Orientada a Objetos, como Java, C++, C#, Python, Ruby y PHP. Estos lenguajes proporcionan herramientas y características específicas para implementar los conceptos de la POO. </p>
+          <h2 style="text-align: center;">¿Cuál es su importancia en el desarrollo de software?
+          </h2>
+          <div>
+            <img src="img/poo-vi.png" alt="base de datos" class="tamaño2">
+          </div>
+          <p>La importancia de la Programación Orientada a Objetos en el desarrollo de software radica en su capacidad para crear software modular, reutilizable y fácilmente mantenible. La POO permite una mejor organización del código, facilita la colaboración en equipos de desarrollo y promueve la escalabilidad y la extensibilidad del software. Además, la POO se alinea con la forma en que los humanos pensamos y modelamos el mundo real, lo que facilita la comprensión y el diseño de sistemas complejos.</p>
+        </div>
+
+      </section>
+       <!-- Contenido de articulos fin -->
+
+      <!-- Pagination -->
+      <section id="pagination" class="d-flex justify-content-center" id="show">
+        <nav aria-label="..." id="show">
+          <ul class="pagination pagination-circle" >
+            <li class="page-item">
+              <a class="page-link" href="#Articulos" tabindex="-1" aria-disabled="true" onclick="goA()" id="after">Anterior</a>
+            </li>
+            <li class="page-item" aria-current="page">
+              <a class="page-link" href="#Articulos" onclick="mostrarA()" id="PA">1<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="page-item" aria-current="page">
+              <a class="page-link" href="#Articulos" onclick="mostrarB()" id="PAB">2<span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#Articulos" onclick="mostrarC()" id="PAC">3<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#Articulos" onclick="goN()" id="next">Siguiente</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <!-- Pagination -->
+    </main>
+    <footer class="bg-light text-center text-lg-left">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+            <h5 lass="text-uppercase"><img
+                    src="img/icono.png"
+                    height="16"
+                    alt=""
+                    loading="lazy"
+                />ede</h5>
+
+            <p>
+              Este es un espacio dedicado a la edición de artículos sobre desarrollo de software.
+              Te invito a seguirme en mis redes sociales y mantenernos en contacto!
+          </div>
+
+          <!--Grid column-->
+          <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center col-lg-6 col-md-6 mb-4 mb-md-0">
+            <a href="https://twitter.com/lfedericososa" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-twitter"></i>
+            </a>
+            <a href="https://github.com/leanfed" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/federico-sosa-desarrollo/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/gigi_tech_solutions/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="mailto:lfedericososa@gmail.com" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-envelope"></i>
+            </a>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-5" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2023 Copyright   |
+        <a class="text-dark" href="/Portfolio/index.html" style="text-decoration: none";><img
+                    src="img/icono.png"
+                    height="16"
+                    alt=""
+                    loading=""
+                />ede IT</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+  <!-- Custom scripts -->
+  <script type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>
